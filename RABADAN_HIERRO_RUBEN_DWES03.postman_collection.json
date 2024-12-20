@@ -1,0 +1,711 @@
+{
+	"info": {
+		"_postman_id": "5807885c-2e15-497a-b677-e442428f8146",
+		"name": "RABADAN_HIERRO_RUBEN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40430153"
+	},
+	"item": [
+		{
+			"name": "Articulos",
+			"item": [
+				{
+					"name": "Articulos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/articulos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"articulos"
+							]
+						},
+						"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+					},
+					"response": []
+				},
+				{
+					"name": "Articulos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"nombre\": \"articulo2\",\n      \"descripcion\": \"ARTICULO\",\n      \"precio\": 57.99,\n      \"stock\": 45\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/articulos/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"articulos",
+								"post"
+							]
+						},
+						"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+					},
+					"response": []
+				},
+				{
+					"name": "Articulos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful PUT request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": 7,\n        \"nombre\": \"1 Duro Crucial BX500 1tb Disco SSD SATA3 540MB\\/S\",\n        \"descripcion\": \"\\u00bfAlguna vez te has preguntado por qu\\u00e9 tu tel\\u00e9fono responde m\\u00e1s r\\u00e1pidamente que tu ordenador? Es porque tu tel\\u00e9fono funciona con una memoria flash. Agrega flash a tu ordenador port\\u00e1til o de escritorio con la unidad de estado s\\u00f3lido Crucial\\u00ae BX500, la manera m\\u00e1s sencilla de obtener toda la velocidad de un ordenador nuevo sin el precio. Acelera todo\",\n        \"precio\": 12.99,\n        \"stock\": 45\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/articulos/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"articulos",
+								"update"
+							]
+						},
+						"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+					},
+					"response": []
+				},
+				{
+					"name": "Articulo by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/articulos/get/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"articulos",
+								"get",
+								"6"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Clientes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"clientes"
+							]
+						},
+						"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+					},
+					"response": []
+				},
+				{
+					"name": "Clientes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful PUT request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 3,\n    \"nombre\": \"Lucas Pérez\",\n    \"email\": \"laura.perez@example.com\",\n    \"telefono\": \"6677889900\",\n    \"direccion\": \"Calle Mayor 789, Valencia\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/clientes/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"clientes",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/clientes/get/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"clientes",
+								"get",
+								"3"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "201",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pedidos",
+			"item": [
+				{
+					"name": "Pedidos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"pedidos"
+							]
+						},
+						"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+					},
+					"response": []
+				},
+				{
+					"name": "Pedidos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"cliente_id\": 1,\r\n        \"vendedor_id\": 2,\r\n        \"articulos\": [\r\n            {\r\n                \"articulo_id\": 1,\r\n                \"cantidad\": 2\r\n            }\r\n        ],\r\n        \"total\": 241,\r\n        \"fecha\": \"2024-12-12\",\r\n        \"estado\": \"pendiente\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/pedidos/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"pedidos",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pedidos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful PUT request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": 1,\n        \"cliente_id\": 1,\n        \"vendedor_id\": 4,\n        \"articulos\": [\n            {\n                \"articulo_id\": 1,\n                \"cantidad\": 2\n            }\n        ],\n        \"total\": 241,\n        \"fecha\": \"2024-12-12\",\n        \"estado\": \"pendiente\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/pedidos/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"pedidos",
+								"update"
+							]
+						},
+						"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+					},
+					"response": []
+				},
+				{
+					"name": "Pedidos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful DELETE request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/pedidos/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"pedidos",
+								"delete",
+								"1"
+							]
+						},
+						"description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+					},
+					"response": []
+				},
+				{
+					"name": "Pedidos cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/pedidos/getCliente/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"pedidos",
+								"getCliente",
+								"1"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pedidos vendedor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/pedidos/getVendedor/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"pedidos",
+								"getVendedor",
+								"4"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vendedores",
+			"item": [
+				{
+					"name": "Vendedores",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/vendedores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"vendedores"
+							]
+						},
+						"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+					},
+					"response": []
+				},
+				{
+					"name": "Vendedores",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Ruben\",\r\n    \"email\": \"ruben@example.com\",\r\n    \"telefono\": \"3344556677\",\r\n    \"direccion\": \"Bilbao\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/vendedores/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"vendedores",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vendedores",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful PUT request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": 6,\n        \"nombre\": \"Ruben\",\n        \"email\": \"ruben@example.com\",\n        \"telefono\": \"3344556677\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/vendedores/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"vendedores",
+								"update"
+							]
+						},
+						"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+					},
+					"response": []
+				},
+				{
+					"name": "Vendedores",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful DELETE request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/vendedores/delete/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"vendedores",
+								"delete",
+								"7"
+							]
+						},
+						"description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+					},
+					"response": []
+				},
+				{
+					"name": "Vendedores by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/rabadan_hierro_ruben_DWES03_TE2/public/vendedores/get/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"rabadan_hierro_ruben_DWES03_TE2",
+								"public",
+								"vendedores",
+								"get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
