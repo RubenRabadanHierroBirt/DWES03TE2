@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "nombre": "AMD Ryzen 7 5800X 3.8GHz",
+      "descripcion": "El procesador que permite disfrutar una experiencia de juego de élite. Ocho núcleos optimizados para computadoras de juego con alto FPS.",
+      "precio": 169.99,
+      "stock": 25
+    },
+    {
+      "id": 2,
+      "nombre": "Intel Core i5-12400F 2.5 GHz",
+      "descripcion": "Procesadores Intel® Core™ de 12ª generación: una generación como ninguna otra antes. Con una nueva arquitectura híbrida de rendimiento sin precedentes, los procesadores Intel® Core™ de 12ª generación ofrecen una combinación única de núcleos de rendimiento y eficiencia (núcleo P y núcleo E). Y eso significa gozar de rendimiento en el mundo real, un resultado escalado intuitivamente para adaptarse a cualquier cosa que estés haciendo.",
+      "precio": 150.00,
+      "stock": 10
+    },
+    {
+      "id": 3,
+      "nombre": "Gigabyte GeForce RTX 4060 WINDFORCE OC 8GB GDDR6 DLSS3",
+      "descripcion": "GeForce RTX Serie 40: La plataforma definitiva para jugadores y creadores",
+      "precio": 306.99,
+      "stock": 10
+    },
+    {
+      "id": 4,
+      "nombre": "Gigabyte GeForce RTX 4080 SUPER GAMING OC 16GB GDDR6X DLSS3",
+      "descripcion": "GeForce RTX Serie 40: La plataforma definitiva para jugadores y creadores",
+      "precio": 150.00,
+      "stock": 0
+    },
+    {
+      "id": 5,
+      "nombre": "Tarjeta Gráfica ASUS Dual AMD Radeon RX 7900 XT OC Edition 20GB GDDR6",
+      "descripcion": "Ofreciendo la última experiencia de la arquitectura AMD RDNA™ 3 en su forma más pura, la ASUS Dual Radeon™ RX 7900 XT OC Edition fusiona rendimiento y sencillez como ninguna otra",
+      "precio": 729.95,
+      "stock": 3
+    },
+    {
+      "id": 6,
+      "nombre": "Corsair Vengeance LPX DDR4 3200MHz PC4-25600 32GB 2x16GB CL16",
+      "descripcion": "La memoria VENGEANCE LPX está diseñada para overclocking de alto rendimiento. El disipador térmico está hecho de aluminio puro para una disipación de calor más rápida, y el PCB de ocho capas ayuda a controlar el calor y proporciona un margen superior de overclocking superior.",
+      "precio": 56.95,
+      "stock": 12
+    },
+    {
+      "id": 7,
+      "nombre": "Disco Duro Crucial BX500 1tb Disco SSD SATA3 540MB/S",
+      "descripcion": "¿Alguna vez te has preguntado por qué tu teléfono responde más rápidamente que tu ordenador? Es porque tu teléfono funciona con una memoria flash. Agrega flash a tu ordenador portátil o de escritorio con la unidad de estado sólido Crucial® BX500, la manera más sencilla de obtener toda la velocidad de un ordenador nuevo sin el precio. Acelera todo",
+      "precio": 57.99,
+      "stock": 45
+    }
+  ]
+  

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "María López",
+    "email": "maria.lopez@empresa.com",
+    "telefono": "123456789"
+  },
+  {
+    "id": 2,
+    "nombre": "Juan Pérez",
+    "email": "juan.perez@empresa.com",
+    "telefono": "987654321"
+  },
+  {
+    "id": 3,
+    "nombre": "Carlos Rodríguez",
+    "email": "carlos.rodriguez@empresa.com",
+    "telefono": "234567890"
+  },
+  {
+    "id": 4,
+    "nombre": "Ana Martínez",
+    "email": "ana.martinez@empresa.com",
+    "telefono": "345678901"
+  },
+  {
+    "id": 5,
+    "nombre": "Pedro Sánchez",
+    "email": "pedro.sanchez@empresa.com",
+    "telefono": "456789012"
+  },
+  {
+    "id": 6,
+    "nombre": "Sofía Fernández",
+    "email": "sofia.fernandez@empresa.com",
+    "telefono": "567890123"
+  },
+  {
+    "id": 7,
+    "nombre": "Luis García",
+    "email": "luis.garcia@empresa.com",
+    "telefono": "678901234"
+  }
+]

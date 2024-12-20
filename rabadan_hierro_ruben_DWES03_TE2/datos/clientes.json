@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ana Gómez",
+    "email": "ana.gomez@example.com",
+    "telefono": "1122334455",
+    "direccion": "Calle Falsa 123, Madrid"
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos Martínez",
+    "email": "carlos.martinez@example.com",
+    "telefono": "5566778899",
+    "direccion": "Avenida Siempre Viva 456, Barcelona"
+  },
+  {
+    "id": 3,
+    "nombre": "Laura Pérez",
+    "email": "laura.perez@example.com",
+    "telefono": "6677889900",
+    "direccion": "Calle Mayor 789, Valencia"
+  },
+  {
+    "id": 4,
+    "nombre": "José Rodríguez",
+    "email": "jose.rodriguez@example.com",
+    "telefono": "1239876543",
+    "direccion": "Calle del Sol 234, Sevilla"
+  },
+  {
+    "id": 5,
+    "nombre": "Sofía Fernández",
+    "email": "sofia.fernandez@example.com",
+    "telefono": "9988776655",
+    "direccion": "Paseo de la Castellana 567, Madrid"
+  },
+  {
+    "id": 6,
+    "nombre": "Luis García",
+    "email": "luis.garcia@example.com",
+    "telefono": "2233445566",
+    "direccion": "Avenida de la Constitución 123, Málaga"
+  },
+  {
+    "id": 7,
+    "nombre": "Pedro Sánchez",
+    "email": "pedro.sanchez@example.com",
+    "telefono": "3344556677",
+    "direccion": "Calle del Parque 890, Zaragoza"
+  }
+]

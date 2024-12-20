@@ -1,0 +1,108 @@
+[
+  {
+    "id": 1,
+    "cliente_id": 1,
+    "vendedor_id": 4,
+    "articulos": [
+      {
+        "articulo_id": 1,
+        "cantidad": 2
+      }
+    ],
+    "total": 241.00,
+    "fecha": "2024-12-12",
+    "estado": "pendiente"
+  },
+  {
+    "id": 2,
+    "cliente_id": 2,
+    "vendedor_id": 4,
+    "articulos": [
+      {
+        "articulo_id": 2,
+        "cantidad": 1
+      },
+      {
+        "articulo_id": 1,
+        "cantidad": 1
+      }
+    ],
+    "total": 420.50,
+    "fecha": "2024-12-10",
+    "estado": "enviado"
+  },
+  {
+    "id": 3,
+    "cliente_id": 4,
+    "vendedor_id": 4,
+    "articulos": [
+      {
+        "articulo_id": 3,
+        "cantidad": 3
+      }
+    ],
+    "total": 540.00,
+    "fecha": "2024-12-09",
+    "estado": "pendiente"
+  },
+  {
+    "id": 4,
+    "cliente_id": 4,
+    "vendedor_id": 4,
+    "articulos": [
+      {
+        "articulo_id": 3,
+        "cantidad": 1
+      },
+      {
+        "articulo_id": 4,
+        "cantidad": 2
+      }
+    ],
+    "total": 600.50,
+    "fecha": "2024-12-08",
+    "estado": "enviado"
+  },
+  {
+    "id": 5,
+    "cliente_id": 5,
+    "vendedor_id": 4,
+    "articulos": [
+      {
+        "articulo_id": 2,
+        "cantidad": 1
+      }
+    ],
+    "total": 150.00,
+    "fecha": "2024-12-07",
+    "estado": "pendiente"
+  },
+  {
+    "id": 6,
+    "cliente_id": 6,
+    "vendedor_id": 4,
+    "articulos": [
+      {
+        "articulo_id": 2,
+        "cantidad": 5
+      }
+    ],
+    "total": 850.00,
+    "fecha": "2024-12-06",
+    "estado": "enviado"
+  },
+  {
+    "id": 7,
+    "cliente_id": 7,
+    "vendedor_id": 4,
+    "articulos": [
+      {
+        "articulo_id": 2,
+        "cantidad": 2
+      }
+    ],
+    "total": 320.00,
+    "fecha": "2024-12-05",
+    "estado": "pendiente"
+  }
+]
